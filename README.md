@@ -198,8 +198,11 @@
      Many Testing features might not be available readily.
      Constant Maintenance.  
 
-
-
+###  What are some problems that can cause integration test failures?
+     **Lack of clarity on what to test and what to exclude from tests and writing too many redundant tests. 
+     **Not writing strong error handling code. The code should only fail if there is a defect in the software. This includes proper Xpath, Asserts.
+     **The test should not have unnecessary timeouts.
+    
 ### How would you go about automating test scripts into a build pipeline? 
     Keep tests scoped to a single purpose. Each test should only do one Task 
 
