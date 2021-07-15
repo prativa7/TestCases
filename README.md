@@ -180,6 +180,26 @@
 
 5.  Test the tab button cycles through the username, password, and save button for user convenience 
 
+### What are some testing frameworks that you have used and what are their advantages and disadvantages? 
+
+    #### Used In house Testing framework and NUnit 
+ 
+#### Advantages 
+    Easy to Setup Test Environment when it compares to other framework 
+    Reliable Technical Support.
+    Easy to use and plenty of documentation 
+    Supports Parallel Test Execution.
+    Low-cost maintenance
+   
+
+   #### Disadvantage 
+     Limited support for Image Testing.
+     Supports Web-based applications only.
+     Many Testing features might not be available readily.
+     Constant Maintenance.  
+
+
+
 ### How would you go about automating test scripts into a build pipeline? 
     Keep tests scoped to a single purpose. Each test should only do one Task 
 
