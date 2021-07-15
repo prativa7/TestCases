@@ -91,8 +91,8 @@
     Verify user receives the "Welcome to Netflix" message 
 
 ### Verify the user can set up a password recovery phone number.
-  https://www.netflix.com/simpleSetup/orderfinal
-Verify password recovery mobile text message is present 
+    https://www.netflix.com/simpleSetup/orderfinal
+    Verify password recovery mobile text message is present 
     Enter the same phone as above 
     Click Next button 
     Verify page switches to https://www.netflix.com/simpleSetup/devicesurvey 
@@ -179,6 +179,19 @@ Verify password recovery mobile text message is present
 4.  Test user cannot log in with only Special Character & Numbers (no letter) on both user name and password.
 
 5.  Test the tab button cycles through the username, password, and save button for user convenience 
+
+### How would you go about automating test scripts into a build pipeline? 
+    Keep tests scoped to a single purpose. Each test should only do one Task 
+
+    Build for reusable parts, with atomic, clear naming conventions.
+
+    Separate each environment. Dev, Staging,and PROD. Code only moves after passing each environment 
+    DEV---> Staging ---> PROD 
+
+
+    Never use sleep the process. This slow down the build and might cause the build to fail 
+
+    Any time application is changed, prepare for the change and monitor the build. 
 
 
 
