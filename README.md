@@ -248,7 +248,7 @@
 
         public Loginpage ValidateUserNameAndPassword()
         {
-            string actualUserName = Driver.Instance.FindElement(By.XPath(""//input[@name='uname']")).Text.ToString().Trim();
+            string actualUserName = Driver.Instance.FindElement(By.XPath("//input[@name='uname']")).Text.ToString().Trim();
             string expectedUserName = "test";
             Assert.AreEqual(actualUserName , expectedUserName);
 
